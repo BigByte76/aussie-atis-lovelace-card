@@ -1,0 +1,6 @@
+{
+  "name": "Aussie ATIS Lovelace Card",
+  "filename": "aussie-atis-card.js",
+  "homeassistant": "2025.1.0",
+  "country": "AU"
+}

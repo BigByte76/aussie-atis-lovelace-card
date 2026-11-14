@@ -1,0 +1,28 @@
+{
+  "name": "aussie-atis-lovelace-card",
+  "version": "0.1.0",
+  "description": "Home Assistant dashboard card that draws an Australian airport and animates the runways in use, from the Australian ATIS integration.",
+  "type": "module",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "layouts": "node scripts/build-layouts.mjs"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.30.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.0"
+  }
+}

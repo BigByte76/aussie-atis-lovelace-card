@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aussie ATIS card demo</title>
+    <!--
+      Demo page: renders the card against demo/states.json, which is built from
+      the Australian ATIS integration's test fixtures. Serve the repository root
+      (e.g. `npx serve .` or `python3 -m http.server`) after `npm run build`,
+      then open /demo/. Add ?theme=dark for dark colours, ?static to stop
+      animations.
+    -->
+    <style>
+      :root {
+        --primary-color: #03a9f4;
+        --primary-text-color: #212121;
+        --secondary-text-color: #727272;
+        --text-primary-color: #fff;
+        --card-background-color: #fff;
+        --divider-color: rgba(0, 0, 0, 0.12);
+        --success-color: #43a047;
+        --info-color: #039be5;
+        --warning-color: #ffa600;
+        --disabled-color: #bdbdbd;
+        font-family: Roboto, system-ui, sans-serif;
+      }
+      :root.dark {
+        --primary-text-color: #e1e1e1;
+        --secondary-text-color: #9b9b9b;
+        --card-background-color: #1c1c1c;
+        --divider-color: rgba(225, 225, 225, 0.12);
+        background: #111;
+      }
+      body {
+        margin: 16px;
+        background: #f5f5f5;
+      }
+      :root.dark body {
+        background: #111;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="cards"></main>
+    <script type="module">
+      const params = new URLSearchParams(location.search);
+      if (params.get("theme") === "dark") document.documentElement.classList.add("dark");
+      // A stand-in for Home Assistant's <ha-card>, styled from the theme variables.
+      class DemoCard extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({ mode: "open" }).innerHTML = `<style>:host{display:block;background:var(--card-background-color);
+            color:var(--primary-text-color);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.2)}</style><slot></slot>`;
+        }
+      }
+      if (!customElements.get("ha-card")) customElements.define("ha-card", DemoCard);
+      await import("../dist/aussie-atis-card.js");
+      const states = await (await fetch("./states.json")).json();
+      const hass = { states, locale: { language: "en" } };
+      const cards = [
+        { airport: "yssy" },
+        { airport: "ymml" },
+        { airport: "ybbn", orientation: "arrival" },
+        { airport: "ypad" },
+        { airport: "ypdn" },
+        { airport: "yamb" },
+        { airport: "ymen", show_info: false },
+        { airport: "zzzz" },
+      ];
+      for (const config of cards) {
+        const card = document.createElement("aussie-atis-card");
+        card.setConfig({ type: "custom:aussie-atis-card", ...config });
+        card.hass = hass;
+        document.getElementById("cards").append(card);
+      }
+    </script>
+  </body>
+</html>

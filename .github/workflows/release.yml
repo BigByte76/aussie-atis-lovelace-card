@@ -1,0 +1,35 @@
+name: Release
+
+# Builds the card and attaches dist/aussie-atis-card.js to a published
+# GitHub release. The Marketplace and HACS install that file.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check the version matches the tag
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          version="$(node -p "require('./package.json').version")"
+          card="$(grep -oE 'CARD_VERSION = "[^"]+"' src/aussie-atis-card.ts | cut -d'"' -f2)"
+          if [ "$tag" != "$version" ] || [ "$tag" != "$card" ]; then
+            echo "Tag $GITHUB_REF_NAME doesn't match package.json ($version) and CARD_VERSION ($card)"
+            exit 1
+          fi
+      - run: npm test
+      - run: npm run build
+      - run: gh release upload "$GITHUB_REF_NAME" dist/aussie-atis-card.js --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}

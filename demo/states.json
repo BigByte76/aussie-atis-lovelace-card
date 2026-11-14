@@ -1,0 +1,1338 @@
+{
+ "sensor.yssy_atis": {
+  "entity_id": "sensor.yssy_atis",
+  "state": "A",
+  "attributes": {
+   "airport": "Sydney",
+   "atis": "ATIS YSSY A   110913\nAPCH: EXP INDEPENDENT VISUAL APCH.\nDO NOT PASS THRU ASSIGNED RWY CL\nRWY: 34L AND R FOR ARRS AND DEPS\n+ OPR INFO: INDEPENDENT PARL APPROACHES AND DEPARTURES IN\nPROGRESS.\nFM TIME 0945, EXP RWY 16L AND R FOR ARR AND DEP\n+ WIND: 100/10 KTS,TW 5 KTS\nVIS: GT 10KM\nCLD: NIL SIGNIFICANT CLOUD\nTMP: 21\n+ QNH: 1016",
+   "changed_fields": [
+    "operational_info",
+    "wind",
+    "qnh"
+   ],
+   "other_info": null,
+   "arrival_runways": [
+    "34L",
+    "34R"
+   ],
+   "departure_runways": [
+    "34L",
+    "34R"
+   ],
+   "runways": [
+    {
+     "ident": "07/25",
+     "length": 2530,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "07",
+       "latitude": -33.943699,
+       "longitude": 151.164001,
+       "heading": 70.0
+      },
+      {
+       "ident": "25",
+       "latitude": -33.9375,
+       "longitude": 151.190002,
+       "heading": 250.0
+      }
+     ]
+    },
+    {
+     "ident": "16L/34R",
+     "length": 2438,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "16L",
+       "latitude": -33.9496,
+       "longitude": 151.188004,
+       "heading": 160.0
+      },
+      {
+       "ident": "34R",
+       "latitude": -33.9711,
+       "longitude": 151.194,
+       "heading": 340.0
+      }
+     ]
+    },
+    {
+     "ident": "16R/34L",
+     "length": 3962,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "16R",
+       "latitude": -33.929401,
+       "longitude": 151.171997,
+       "heading": 160.0
+      },
+      {
+       "ident": "34L",
+       "latitude": -33.964298,
+       "longitude": 151.181,
+       "heading": 340.0
+      }
+     ]
+    }
+   ]
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_issued": {
+  "entity_id": "sensor.yssy_atis_issued",
+  "state": "2026-11-11T09:13:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_arrival_runways": {
+  "entity_id": "sensor.yssy_atis_arrival_runways",
+  "state": "34L, 34R",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_departure_runways": {
+  "entity_id": "sensor.yssy_atis_departure_runways",
+  "state": "34L, 34R",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_approach": {
+  "entity_id": "sensor.yssy_atis_approach",
+  "state": "EXP INDEPENDENT VISUAL APCH. DO NOT PASS THRU ASSIGNED RWY CL",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_wind": {
+  "entity_id": "sensor.yssy_atis_wind",
+  "state": "100/10 KTS,TW 5 KTS",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_visibility": {
+  "entity_id": "sensor.yssy_atis_visibility",
+  "state": "GT 10KM",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_weather": {
+  "entity_id": "sensor.yssy_atis_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_cloud": {
+  "entity_id": "sensor.yssy_atis_cloud",
+  "state": "NIL SIGNIFICANT CLOUD",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_operational_info": {
+  "entity_id": "sensor.yssy_atis_operational_info",
+  "state": "INDEPENDENT PARL APPROACHES AND DEPARTURES IN PROGRESS. FM TIME 0945, EXP RWY 16L AND R FOR ARR AND DEP",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_significant_weather": {
+  "entity_id": "sensor.yssy_atis_significant_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_wind_speed": {
+  "entity_id": "sensor.yssy_atis_wind_speed",
+  "state": "10",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_wind_gust": {
+  "entity_id": "sensor.yssy_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_max_crosswind": {
+  "entity_id": "sensor.yssy_atis_max_crosswind",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_max_tailwind": {
+  "entity_id": "sensor.yssy_atis_max_tailwind",
+  "state": "5",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_wind_direction": {
+  "entity_id": "sensor.yssy_atis_wind_direction",
+  "state": "100",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_qnh": {
+  "entity_id": "sensor.yssy_atis_qnh",
+  "state": "1016",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yssy_atis_metar": {
+  "entity_id": "sensor.yssy_atis_metar",
+  "state": "METAR YSSY 110900Z AUTO 09007KT 9999 // NCD 22/15 Q1015 RMK\nRF00.0/000.0",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis": {
+  "entity_id": "sensor.ymml_atis",
+  "state": "P",
+  "attributes": {
+   "airport": "Melbourne",
+   "atis": "ATIS YMML P   110921\nAPCH: EXP GLS OR ILS APCH\nRWY: 16 FOR ARR. RWY 27 FOR DEP\n+ WND: 170/10, MAX TW 5 KTS RWY 27, MAX XW 12 KTS RWY 27\nWX: CAVOK\n+ TMP: 12\nQNH: 1022",
+   "changed_fields": [
+    "wind",
+    "temperature"
+   ],
+   "other_info": null
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_issued": {
+  "entity_id": "sensor.ymml_atis_issued",
+  "state": "2026-11-11T09:21:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_arrival_runways": {
+  "entity_id": "sensor.ymml_atis_arrival_runways",
+  "state": "16",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_departure_runways": {
+  "entity_id": "sensor.ymml_atis_departure_runways",
+  "state": "27",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_approach": {
+  "entity_id": "sensor.ymml_atis_approach",
+  "state": "EXP GLS OR ILS APCH",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_wind": {
+  "entity_id": "sensor.ymml_atis_wind",
+  "state": "170/10, MAX TW 5 KTS RWY 27, MAX XW 12 KTS RWY 27",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_visibility": {
+  "entity_id": "sensor.ymml_atis_visibility",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_weather": {
+  "entity_id": "sensor.ymml_atis_weather",
+  "state": "CAVOK",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_cloud": {
+  "entity_id": "sensor.ymml_atis_cloud",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_operational_info": {
+  "entity_id": "sensor.ymml_atis_operational_info",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_significant_weather": {
+  "entity_id": "sensor.ymml_atis_significant_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_wind_speed": {
+  "entity_id": "sensor.ymml_atis_wind_speed",
+  "state": "10",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_wind_gust": {
+  "entity_id": "sensor.ymml_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_max_crosswind": {
+  "entity_id": "sensor.ymml_atis_max_crosswind",
+  "state": "12",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_max_tailwind": {
+  "entity_id": "sensor.ymml_atis_max_tailwind",
+  "state": "5",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_wind_direction": {
+  "entity_id": "sensor.ymml_atis_wind_direction",
+  "state": "170",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_qnh": {
+  "entity_id": "sensor.ymml_atis_qnh",
+  "state": "1022",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymml_atis_metar": {
+  "entity_id": "sensor.ymml_atis_metar",
+  "state": "METAR YMML 110900Z AUTO 19010KT 9999 // NCD 13/08 Q1022 RMK\nRF00.0/000.0",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis": {
+  "entity_id": "sensor.ybbn_atis",
+  "state": "P",
+  "attributes": {
+   "airport": "Brisbane",
+   "atis": "ATIS YBBN P   110906\nAPCH: EXP INST APCH\nRWY: 01L AND R ARR. 01R DEP\nSFC COND: SFC COND CODE 5, 5, 5. WHOLE RWY WET.\nOPR INFO: HIGH INTENSITY APPROACH AND HIGH INTENSITY RUNWAY\nLIGHTING OPERATING.\nEXPECT DELAYS ON DEPARTURE.\nSTART APPROVAL REQUIRED.\n+ WND: 320/15, MAX XW 18\n+ VIS: 10 KM, REDUCING TO 5000 M, IN PASSING SHOWERS\n+ WX:\nCLD: SCT010 BKN020\nTMP: 22\nQNH: 1018\n+ SIGWX: TS IN AREA",
+   "changed_fields": [
+    "wind",
+    "visibility",
+    "weather",
+    "sigwx"
+   ],
+   "other_info": null,
+   "arrival_runways": [
+    "01L",
+    "01R"
+   ],
+   "departure_runways": [
+    "01R"
+   ],
+   "runways": [
+    {
+     "ident": "01L/19R",
+     "length": 3300,
+     "width": 60,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "01L",
+       "latitude": -27.383101,
+       "longitude": 153.106995,
+       "heading": 10.0
+      },
+      {
+       "ident": "19R",
+       "latitude": -27.3566,
+       "longitude": 153.121994,
+       "heading": 190.0
+      }
+     ]
+    },
+    {
+     "ident": "01R/19L",
+     "length": 3560,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "01R",
+       "latitude": -27.4039,
+       "longitude": 153.117996,
+       "heading": 10.0
+      },
+      {
+       "ident": "19L",
+       "latitude": -27.375299,
+       "longitude": 153.134003,
+       "heading": 190.0
+      }
+     ]
+    }
+   ]
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_issued": {
+  "entity_id": "sensor.ybbn_atis_issued",
+  "state": "2026-11-11T09:06:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_arrival_runways": {
+  "entity_id": "sensor.ybbn_atis_arrival_runways",
+  "state": "01L, 01R",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_departure_runways": {
+  "entity_id": "sensor.ybbn_atis_departure_runways",
+  "state": "01R",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_approach": {
+  "entity_id": "sensor.ybbn_atis_approach",
+  "state": "EXP INST APCH",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_wind": {
+  "entity_id": "sensor.ybbn_atis_wind",
+  "state": "320/15, MAX XW 18",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_visibility": {
+  "entity_id": "sensor.ybbn_atis_visibility",
+  "state": "10 KM, REDUCING TO 5000 M, IN PASSING SHOWERS",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_weather": {
+  "entity_id": "sensor.ybbn_atis_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_cloud": {
+  "entity_id": "sensor.ybbn_atis_cloud",
+  "state": "SCT010 BKN020",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_operational_info": {
+  "entity_id": "sensor.ybbn_atis_operational_info",
+  "state": "HIGH INTENSITY APPROACH AND HIGH INTENSITY RUNWAY LIGHTING OPERATING. EXPECT DELAYS ON DEPARTURE. START APPROVAL REQUIRED.",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_significant_weather": {
+  "entity_id": "sensor.ybbn_atis_significant_weather",
+  "state": "TS IN AREA",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_wind_speed": {
+  "entity_id": "sensor.ybbn_atis_wind_speed",
+  "state": "27.8",
+  "attributes": {
+   "unit_of_measurement": "km/h"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_wind_gust": {
+  "entity_id": "sensor.ybbn_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "km/h"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_max_crosswind": {
+  "entity_id": "sensor.ybbn_atis_max_crosswind",
+  "state": "33.3",
+  "attributes": {
+   "unit_of_measurement": "km/h"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_max_tailwind": {
+  "entity_id": "sensor.ybbn_atis_max_tailwind",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "km/h"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_wind_direction": {
+  "entity_id": "sensor.ybbn_atis_wind_direction",
+  "state": "320",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_qnh": {
+  "entity_id": "sensor.ybbn_atis_qnh",
+  "state": "1018",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ybbn_atis_metar": {
+  "entity_id": "sensor.ybbn_atis_metar",
+  "state": "SPECI YBBN 110913Z AUTO 34009KT 4700 SHOWERS OF HEAVY RAIN FEW017\nSCT029 BKN060 21/21 Q1018 RECENT THUNDERSTORMS RMK RF01.6/036.8",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis": {
+  "entity_id": "sensor.ypad_atis",
+  "state": "C",
+  "attributes": {
+   "airport": "Adelaide",
+   "atis": "ATIS YPAD C   110821\nRWY: 23 AND 12 FOR ARR. RWY 23 FOR DEP\nWND: 160/12. MAX XW 14 BOTH RUNWAYS.\nWX: CAVOK\n+ TMP: 17\n+ QNH: 1021\nSIGWX: SIGMET VICTOR 18, SEV TURB FORECAST ABOVE FL240.",
+   "changed_fields": [
+    "temperature",
+    "qnh"
+   ],
+   "other_info": null,
+   "arrival_runways": [
+    "23",
+    "12"
+   ],
+   "departure_runways": [
+    "23"
+   ],
+   "runways": [
+    {
+     "ident": "05/23",
+     "length": 3100,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "05",
+       "latitude": -34.9585,
+       "longitude": 138.516998,
+       "heading": 50.0
+      },
+      {
+       "ident": "23",
+       "latitude": -34.940601,
+       "longitude": 138.542999,
+       "heading": 230.0
+      }
+     ]
+    },
+    {
+     "ident": "12/30",
+     "length": 1652,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "12",
+       "latitude": -34.9412,
+       "longitude": 138.522003,
+       "heading": 120.0
+      },
+      {
+       "ident": "30",
+       "latitude": -34.949402,
+       "longitude": 138.537003,
+       "heading": 300.0
+      }
+     ]
+    }
+   ]
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_issued": {
+  "entity_id": "sensor.ypad_atis_issued",
+  "state": "2026-11-11T08:21:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_arrival_runways": {
+  "entity_id": "sensor.ypad_atis_arrival_runways",
+  "state": "23, 12",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_departure_runways": {
+  "entity_id": "sensor.ypad_atis_departure_runways",
+  "state": "23",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_approach": {
+  "entity_id": "sensor.ypad_atis_approach",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_wind": {
+  "entity_id": "sensor.ypad_atis_wind",
+  "state": "160/12. MAX XW 14 BOTH RUNWAYS.",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_visibility": {
+  "entity_id": "sensor.ypad_atis_visibility",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_weather": {
+  "entity_id": "sensor.ypad_atis_weather",
+  "state": "CAVOK",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_cloud": {
+  "entity_id": "sensor.ypad_atis_cloud",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_operational_info": {
+  "entity_id": "sensor.ypad_atis_operational_info",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_significant_weather": {
+  "entity_id": "sensor.ypad_atis_significant_weather",
+  "state": "SIGMET VICTOR 18, SEV TURB FORECAST ABOVE FL240.",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_wind_speed": {
+  "entity_id": "sensor.ypad_atis_wind_speed",
+  "state": "12",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_wind_gust": {
+  "entity_id": "sensor.ypad_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_max_crosswind": {
+  "entity_id": "sensor.ypad_atis_max_crosswind",
+  "state": "14",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_max_tailwind": {
+  "entity_id": "sensor.ypad_atis_max_tailwind",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_wind_direction": {
+  "entity_id": "sensor.ypad_atis_wind_direction",
+  "state": "160",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_qnh": {
+  "entity_id": "sensor.ypad_atis_qnh",
+  "state": "1021",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypad_atis_metar": {
+  "entity_id": "sensor.ypad_atis_metar",
+  "state": "METAR YPAD 110900Z AUTO 16009KT 9999 // NCD 16/08 Q1021 RMK\nRF00.0/000.0",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis": {
+  "entity_id": "sensor.ypdn_atis",
+  "state": "S",
+  "attributes": {
+   "airport": "Darwin",
+   "atis": "ATIS YPDN S   110848\nAPCH:EXP VISUAL APCH\nRWY: 11 AND 36\nSURFACE COND:\nOPR INFO:LAHSO IN PROGRESS\n+ WIND:030/10, MAX XW 10KT\nVIS:GREATER THAN 10 KM\nWX:\nCLD:FEW030\n+ TMP:32\n+ QNH:1010\nSIG WX:\nDEPARTURE FREQUENCY:123.0",
+   "changed_fields": [
+    "wind",
+    "temperature",
+    "qnh"
+   ],
+   "other_info": "DEPARTURE FREQUENCY:123.0",
+   "arrival_runways": [
+    "11",
+    "36"
+   ],
+   "departure_runways": [
+    "11",
+    "36"
+   ],
+   "runways": [
+    {
+     "ident": "11/29",
+     "length": 3354,
+     "width": 60,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "11",
+       "latitude": -12.4094,
+       "longitude": 130.865005,
+       "heading": 110.0
+      },
+      {
+       "ident": "29",
+       "latitude": -12.4192,
+       "longitude": 130.893997,
+       "heading": 290.0
+      }
+     ]
+    },
+    {
+     "ident": "18/36",
+     "length": 1524,
+     "width": 30,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "18",
+       "latitude": -12.4088,
+       "longitude": 130.871002,
+       "heading": 180.0
+      },
+      {
+       "ident": "36",
+       "latitude": -12.4226,
+       "longitude": 130.871002,
+       "heading": 360.0
+      }
+     ]
+    }
+   ]
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_issued": {
+  "entity_id": "sensor.ypdn_atis_issued",
+  "state": "2026-11-11T08:48:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_arrival_runways": {
+  "entity_id": "sensor.ypdn_atis_arrival_runways",
+  "state": "11, 36",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_departure_runways": {
+  "entity_id": "sensor.ypdn_atis_departure_runways",
+  "state": "11, 36",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_approach": {
+  "entity_id": "sensor.ypdn_atis_approach",
+  "state": "EXP VISUAL APCH",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_wind": {
+  "entity_id": "sensor.ypdn_atis_wind",
+  "state": "030/10, MAX XW 10KT",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_visibility": {
+  "entity_id": "sensor.ypdn_atis_visibility",
+  "state": "GREATER THAN 10 KM",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_weather": {
+  "entity_id": "sensor.ypdn_atis_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_cloud": {
+  "entity_id": "sensor.ypdn_atis_cloud",
+  "state": "FEW030",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_operational_info": {
+  "entity_id": "sensor.ypdn_atis_operational_info",
+  "state": "LAHSO IN PROGRESS",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_significant_weather": {
+  "entity_id": "sensor.ypdn_atis_significant_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_wind_speed": {
+  "entity_id": "sensor.ypdn_atis_wind_speed",
+  "state": "10",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_wind_gust": {
+  "entity_id": "sensor.ypdn_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_max_crosswind": {
+  "entity_id": "sensor.ypdn_atis_max_crosswind",
+  "state": "10",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_max_tailwind": {
+  "entity_id": "sensor.ypdn_atis_max_tailwind",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_wind_direction": {
+  "entity_id": "sensor.ypdn_atis_wind_direction",
+  "state": "30",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_qnh": {
+  "entity_id": "sensor.ypdn_atis_qnh",
+  "state": "1010",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ypdn_atis_metar": {
+  "entity_id": "sensor.ypdn_atis_metar",
+  "state": "METAR YPDN 110900Z AUTO 04010KT 9999 // NCD 32/23 Q1010 RMK\nRF00.0/000.0",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis": {
+  "entity_id": "sensor.yamb_atis",
+  "state": "Z",
+  "attributes": {
+   "airport": "RAAF Base Amberley",
+   "atis": "ATIS YAMB Z 110500\nTOWER CLOSED UNTIL 0930Z\nCTR AND RESTRICTED AREAS DEACTIVATED\nCTAF AND PAL FREQ 118.3\nOPR INFO:RWY 04/22 CLOSED FM 0700Z, TACAN NOT AVBL FM 0700Z",
+   "changed_fields": [],
+   "other_info": "TOWER CLOSED UNTIL 0930Z CTR AND RESTRICTED AREAS DEACTIVATED CTAF AND PAL FREQ 118.3",
+   "arrival_runways": [],
+   "departure_runways": [],
+   "runways": [
+    {
+     "ident": "04/22",
+     "length": 1523,
+     "width": 45,
+     "surface": "unknown",
+     "ends": [
+      {
+       "ident": "04",
+       "latitude": -27.6446,
+       "longitude": 152.707993,
+       "heading": 40.0
+      },
+      {
+       "ident": "22",
+       "latitude": -27.6366,
+       "longitude": 152.720001,
+       "heading": 220.0
+      }
+     ]
+    },
+    {
+     "ident": "15/33",
+     "length": 3047,
+     "width": 45,
+     "surface": "unknown",
+     "ends": [
+      {
+       "ident": "15",
+       "latitude": -27.6217,
+       "longitude": 152.705002,
+       "heading": 150.0
+      },
+      {
+       "ident": "33",
+       "latitude": -27.647301,
+       "longitude": 152.716003,
+       "heading": 330.0
+      }
+     ]
+    }
+   ]
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_issued": {
+  "entity_id": "sensor.yamb_atis_issued",
+  "state": "2026-11-11T05:00:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_arrival_runways": {
+  "entity_id": "sensor.yamb_atis_arrival_runways",
+  "state": "",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_departure_runways": {
+  "entity_id": "sensor.yamb_atis_departure_runways",
+  "state": "",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_approach": {
+  "entity_id": "sensor.yamb_atis_approach",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_wind": {
+  "entity_id": "sensor.yamb_atis_wind",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_visibility": {
+  "entity_id": "sensor.yamb_atis_visibility",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_weather": {
+  "entity_id": "sensor.yamb_atis_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_cloud": {
+  "entity_id": "sensor.yamb_atis_cloud",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_operational_info": {
+  "entity_id": "sensor.yamb_atis_operational_info",
+  "state": "RWY 04/22 CLOSED FM 0700Z, TACAN NOT AVBL FM 0700Z",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_significant_weather": {
+  "entity_id": "sensor.yamb_atis_significant_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_wind_speed": {
+  "entity_id": "sensor.yamb_atis_wind_speed",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_wind_gust": {
+  "entity_id": "sensor.yamb_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_max_crosswind": {
+  "entity_id": "sensor.yamb_atis_max_crosswind",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_max_tailwind": {
+  "entity_id": "sensor.yamb_atis_max_tailwind",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_wind_direction": {
+  "entity_id": "sensor.yamb_atis_wind_direction",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_qnh": {
+  "entity_id": "sensor.yamb_atis_qnh",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.yamb_atis_metar": {
+  "entity_id": "sensor.yamb_atis_metar",
+  "state": "METAR YAMB 110900Z 36006KT CAVOK 21/21 Q1017 RMK RF00.0/006.8 DL-NE\nOVC130 DIST CB E",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis": {
+  "entity_id": "sensor.ymen_atis",
+  "state": "D",
+  "attributes": {
+   "airport": "Essendon",
+   "atis": "ATIS YMEN D   110851\nRWY: 26 FOR ARRS. RWY 17 FOR DEPS\nOPR INFO: ABN UNSERVICEABLE AS PER NOTAM\nWIND: 190/12, MAX XW 16 KTS AND MAX TW 2 KTS RWY 26\n+ VIS: GT 10KM\n+ WX:\n+ CLD: FEW025\n+ TMP: 14\n+ QNH: 1022",
+   "changed_fields": [
+    "visibility",
+    "weather",
+    "cloud",
+    "temperature",
+    "qnh"
+   ],
+   "other_info": null,
+   "arrival_runways": [
+    "26"
+   ],
+   "departure_runways": [
+    "17"
+   ],
+   "runways": [
+    {
+     "ident": "08/26",
+     "length": 1921,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "08",
+       "latitude": -37.731391,
+       "longitude": 144.892877,
+       "heading": 80.0
+      },
+      {
+       "ident": "26",
+       "latitude": -37.730792,
+       "longitude": 144.91466,
+       "heading": 260.0
+      }
+     ]
+    },
+    {
+     "ident": "17/35",
+     "length": 1314,
+     "width": 45,
+     "surface": "asphalt",
+     "ends": [
+      {
+       "ident": "17",
+       "latitude": -37.720416,
+       "longitude": 144.900758,
+       "heading": 170.0
+      },
+      {
+       "ident": "35",
+       "latitude": -37.733943,
+       "longitude": 144.901406,
+       "heading": 350.0
+      }
+     ]
+    }
+   ]
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_issued": {
+  "entity_id": "sensor.ymen_atis_issued",
+  "state": "2026-11-11T08:51:00+00:00",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_arrival_runways": {
+  "entity_id": "sensor.ymen_atis_arrival_runways",
+  "state": "26",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_departure_runways": {
+  "entity_id": "sensor.ymen_atis_departure_runways",
+  "state": "17",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_approach": {
+  "entity_id": "sensor.ymen_atis_approach",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_wind": {
+  "entity_id": "sensor.ymen_atis_wind",
+  "state": "190/12, MAX XW 16 KTS AND MAX TW 2 KTS RWY 26",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_visibility": {
+  "entity_id": "sensor.ymen_atis_visibility",
+  "state": "GT 10KM",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_weather": {
+  "entity_id": "sensor.ymen_atis_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_cloud": {
+  "entity_id": "sensor.ymen_atis_cloud",
+  "state": "FEW025",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_operational_info": {
+  "entity_id": "sensor.ymen_atis_operational_info",
+  "state": "ABN UNSERVICEABLE AS PER NOTAM",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_significant_weather": {
+  "entity_id": "sensor.ymen_atis_significant_weather",
+  "state": "unknown",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_wind_speed": {
+  "entity_id": "sensor.ymen_atis_wind_speed",
+  "state": "12",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_wind_gust": {
+  "entity_id": "sensor.ymen_atis_wind_gust",
+  "state": "unknown",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_max_crosswind": {
+  "entity_id": "sensor.ymen_atis_max_crosswind",
+  "state": "16",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_max_tailwind": {
+  "entity_id": "sensor.ymen_atis_max_tailwind",
+  "state": "2",
+  "attributes": {
+   "unit_of_measurement": "kn"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_wind_direction": {
+  "entity_id": "sensor.ymen_atis_wind_direction",
+  "state": "190",
+  "attributes": {
+   "unit_of_measurement": "\u00b0"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_qnh": {
+  "entity_id": "sensor.ymen_atis_qnh",
+  "state": "1022",
+  "attributes": {
+   "unit_of_measurement": "hPa"
+  },
+  "last_changed": "",
+  "last_updated": ""
+ },
+ "sensor.ymen_atis_metar": {
+  "entity_id": "sensor.ymen_atis_metar",
+  "state": "METAR YMEN 110900Z AUTO 20012KT 9999 // NCD 14/08 Q1022 RMK\nRF00.0/000.0",
+  "attributes": {},
+  "last_changed": "",
+  "last_updated": ""
+ }
+}
