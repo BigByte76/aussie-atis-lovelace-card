@@ -24,6 +24,8 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      - name: Check dist/ is up to date
+        run: git diff --exit-code -- dist || (echo "Run npm run build and commit dist/aussie-atis-card.js" && exit 1)
 
   hacs:
     runs-on: ubuntu-latest

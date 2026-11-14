@@ -12,7 +12,7 @@ A Home Assistant dashboard card (`custom:aussie-atis-card`), distributed through
 npm install
 npm test            # Vitest unit tests for src/model.ts
 npm run typecheck
-npm run build       # Rollup → dist/aussie-atis-card.js (not committed; attached to releases)
+npm run build       # Rollup → dist/aussie-atis-card.js (committed, because HACS and the Marketplace read it from the default branch until there's a release; CI fails if it's stale)
 npm run layouts     # rebuild src/data/layouts.json from OurAirports
 ```
 

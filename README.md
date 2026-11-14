@@ -95,7 +95,7 @@ If the ATIS names a runway that isn't on the map, the card lists it under the ma
 npm install
 npm test          # unit tests (Vitest)
 npm run typecheck
-npm run build     # dist/aussie-atis-card.js
+npm run build     # dist/aussie-atis-card.js (commit it: HACS reads it from the default branch)
 npm run layouts   # rebuild the bundled layouts from OurAirports
 ```
 
