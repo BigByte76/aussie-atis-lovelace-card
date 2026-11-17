@@ -9,6 +9,7 @@ const LABELS: Record<string, string> = {
   show_planes: "Animated aircraft",
   show_wind: "Wind",
   show_info: "ATIS details",
+  show_atfm: "ATFM Daily Plan",
 };
 
 function airportOptions(hass: HomeAssistant | undefined, current: string | undefined) {
@@ -67,6 +68,7 @@ class AussieAtisCardEditor extends LitElement {
           { name: "show_planes", selector: { boolean: {} } },
           { name: "show_wind", selector: { boolean: {} } },
           { name: "show_info", selector: { boolean: {} } },
+          { name: "show_atfm", selector: { boolean: {} } },
         ],
       },
     ];
@@ -79,6 +81,7 @@ class AussieAtisCardEditor extends LitElement {
       show_planes: true,
       show_wind: true,
       show_info: true,
+      show_atfm: false,
       ...this._config,
     };
     return html`<ha-form

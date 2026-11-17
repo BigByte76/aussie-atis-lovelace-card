@@ -1334,5 +1334,974 @@
   "attributes": {},
   "last_changed": "",
   "last_updated": ""
+ },
+ "sensor.yssy_atis_atfm_plan": {
+  "entity_id": "sensor.yssy_atis_atfm_plan",
+  "state": "2026-11-18",
+  "attributes": {
+   "version": 1,
+   "change_summary": "[07:34pm] Version 1: Initial.",
+   "forecast": [
+    {
+     "start": "2026-11-18T06:00:00+11:00",
+     "end": "2026-11-18T07:00:00+11:00",
+     "runway_mode": "34 DVAB",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAB",
+     "arrival_rate": 34,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T07:00:00+11:00",
+     "end": "2026-11-18T08:00:00+11:00",
+     "runway_mode": "34 DVAB",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAB",
+     "arrival_rate": 40,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T08:00:00+11:00",
+     "end": "2026-11-18T09:00:00+11:00",
+     "runway_mode": "34 DVAB",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAB",
+     "arrival_rate": 40,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T09:00:00+11:00",
+     "end": "2026-11-18T10:00:00+11:00",
+     "runway_mode": "34 DVAB",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAB",
+     "arrival_rate": 40,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T10:00:00+11:00",
+     "end": "2026-11-18T11:00:00+11:00",
+     "runway_mode": "34 DVAB",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAB",
+     "arrival_rate": 40,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T11:00:00+11:00",
+     "end": "2026-11-18T12:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T12:00:00+11:00",
+     "end": "2026-11-18T13:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T13:00:00+11:00",
+     "end": "2026-11-18T14:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T14:00:00+11:00",
+     "end": "2026-11-18T15:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T15:00:00+11:00",
+     "end": "2026-11-18T16:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T16:00:00+11:00",
+     "end": "2026-11-18T17:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T17:00:00+11:00",
+     "end": "2026-11-18T18:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T18:00:00+11:00",
+     "end": "2026-11-18T19:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T19:00:00+11:00",
+     "end": "2026-11-18T20:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 44,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T20:00:00+11:00",
+     "end": "2026-11-18T21:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 38,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T21:00:00+11:00",
+     "end": "2026-11-18T22:00:00+11:00",
+     "runway_mode": "34 DVAA",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAA",
+     "arrival_rate": 38,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T22:00:00+11:00",
+     "end": "2026-11-18T23:00:00+11:00",
+     "runway_mode": "34 DVAB",
+     "runways": [
+      "34"
+     ],
+     "mode_code": "DVAB",
+     "arrival_rate": 32,
+     "notes": [
+      1
+     ]
+    }
+   ],
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.yssy_atis_atfm_runway_mode": {
+  "entity_id": "sensor.yssy_atis_atfm_runway_mode",
+  "state": "34 DVAA",
+  "attributes": {
+   "runways": [
+    "34"
+   ],
+   "mode_code": "DVAA",
+   "next_change": "2026-11-18T22:00:00+11:00",
+   "next_runway_mode": "34 DVAB",
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.yssy_atis_atfm_arrival_rate": {
+  "entity_id": "sensor.yssy_atis_atfm_arrival_rate",
+  "state": "44",
+  "attributes": {
+   "unit_of_measurement": "arrivals/h",
+   "next_change": "2026-11-18T20:00:00+11:00",
+   "next_arrival_rate": 38,
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.yssy_atis_atfm_ground_delay_program": {
+  "entity_id": "sensor.yssy_atis_atfm_ground_delay_program",
+  "state": "None",
+  "attributes": {
+   "programs": [],
+   "total_movements": 827,
+   "affected_flights": null,
+   "total_ground_delay_minutes": 0,
+   "average_ground_delay_minutes": 0.0,
+   "gdp_notes": "Nil significant operational issues currently identified.",
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.yssy_atis_atfm_notes": {
+  "entity_id": "sensor.yssy_atis_atfm_notes",
+  "state": "A ridge axis sitting off the NSW coast will direct a NE airstream over Sydney on Wednesday. Scattered patches of cloud 2000-3000ft at first, lifting above 2500ft by 00Z, then lowering to 2000ft again in the late evening. There is some model uncertainty w\u2026",
+  "attributes": {
+   "full_text": "A ridge axis sitting off the NSW coast will direct a NE airstream over Sydney on Wednesday. Scattered patches of cloud 2000-3000ft at first, lifting above 2500ft by 00Z, then lowering to 2000ft again in the late evening. There is some model uncertainty with the winds in the morning and early afternoon. The most likely scenario is for surface winds to decouple from those aloft early, with a WNW drainage flow at the Airport before 22Z, then becoming variable for a period, before a NE is established shortly before midday (hence RWY 34 has been planned all day). An alternate scenario some guidance is suggesting features a light ESE at first, favouring RWY 16. There is a also a chance of an ESE bay breeze for 1-2 hours in the late morning/early afternoon, possibly requiring RWY 16 ops 23-01Z. During the afternoon, crosswinds generally expected to keep between 15-20 knots, however occasional crosswinds above threshold are expected at times, particularly between 04-07Z.",
+   "metcdm_notes": [
+    {
+     "number": 1,
+     "start": "2026-11-18T06:00:00+11:00",
+     "end": "2026-11-18T23:00:00+11:00",
+     "text": "A ridge axis sitting off the NSW coast will direct a NE airstream over Sydney on Wednesday. Scattered patches of cloud 2000-3000ft at first, lifting above 2500ft by 00Z, then lowering to 2000ft again in the late evening. There is some model uncertainty with the winds in the morning and early afternoon. The most likely scenario is for surface winds to decouple from those aloft early, with a WNW drainage flow at the Airport before 22Z, then becoming variable for a period, before a NE is established shortly before midday (hence RWY 34 has been planned all day). An alternate scenario some guidance is suggesting features a light ESE at first, favouring RWY 16. There is a also a chance of an ESE bay breeze for 1-2 hours in the late morning/early afternoon, possibly requiring RWY 16 ops 23-01Z. During the afternoon, crosswinds generally expected to keep between 15-20 knots, however occasional crosswinds above threshold are expected at times, particularly between 04-07Z."
+    }
+   ],
+   "dlm_notes": [],
+   "sm_notes": [
+    {
+     "number": 1,
+     "start": "2026-11-18T20:00:00+11:00",
+     "end": "2026-11-18T22:00:00+11:00",
+     "text": "6nm spacing required after dark"
+    }
+   ],
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ymml_atis_atfm_plan": {
+  "entity_id": "sensor.ymml_atis_atfm_plan",
+  "state": "2026-11-18",
+  "attributes": {
+   "version": 1,
+   "change_summary": "[07:34pm] Version 1: Initial.",
+   "forecast": [
+    {
+     "start": "2026-11-18T06:00:00+11:00",
+     "end": "2026-11-18T07:00:00+11:00",
+     "runway_mode": "16 IMCA",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "IMCA",
+     "arrival_rate": 22,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T07:00:00+11:00",
+     "end": "2026-11-18T08:00:00+11:00",
+     "runway_mode": "16 IMCA",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "IMCA",
+     "arrival_rate": 22,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T08:00:00+11:00",
+     "end": "2026-11-18T09:00:00+11:00",
+     "runway_mode": "16 IMCA",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "IMCA",
+     "arrival_rate": 22,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T09:00:00+11:00",
+     "end": "2026-11-18T10:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 23,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T10:00:00+11:00",
+     "end": "2026-11-18T11:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 24,
+     "notes": [
+      1,
+      2
+     ]
+    },
+    {
+     "start": "2026-11-18T11:00:00+11:00",
+     "end": "2026-11-18T12:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 24,
+     "notes": [
+      1,
+      2
+     ]
+    },
+    {
+     "start": "2026-11-18T12:00:00+11:00",
+     "end": "2026-11-18T13:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 24,
+     "notes": [
+      2,
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T13:00:00+11:00",
+     "end": "2026-11-18T14:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 24,
+     "notes": [
+      2,
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T14:00:00+11:00",
+     "end": "2026-11-18T15:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 24,
+     "notes": [
+      2,
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T15:00:00+11:00",
+     "end": "2026-11-18T16:00:00+11:00",
+     "runway_mode": "16 VMC",
+     "runways": [
+      "16"
+     ],
+     "mode_code": "VMC",
+     "arrival_rate": 24,
+     "notes": [
+      2,
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T16:00:00+11:00",
+     "end": "2026-11-18T17:00:00+11:00",
+     "runway_mode": "16/27 VMCA",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "VMCA",
+     "arrival_rate": 27,
+     "notes": [
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T17:00:00+11:00",
+     "end": "2026-11-18T18:00:00+11:00",
+     "runway_mode": "16/27 VMCA",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "VMCA",
+     "arrival_rate": 27,
+     "notes": [
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T18:00:00+11:00",
+     "end": "2026-11-18T19:00:00+11:00",
+     "runway_mode": "16/27 VMCA",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "VMCA",
+     "arrival_rate": 27,
+     "notes": [
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T19:00:00+11:00",
+     "end": "2026-11-18T20:00:00+11:00",
+     "runway_mode": "16/27 VMCA",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "VMCA",
+     "arrival_rate": 27,
+     "notes": [
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T20:00:00+11:00",
+     "end": "2026-11-18T21:00:00+11:00",
+     "runway_mode": "16/27 VMCB",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "VMCB",
+     "arrival_rate": 25,
+     "notes": [
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T21:00:00+11:00",
+     "end": "2026-11-18T22:00:00+11:00",
+     "runway_mode": "16/27 VMCB",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "VMCB",
+     "arrival_rate": 24,
+     "notes": [
+      3
+     ]
+    },
+    {
+     "start": "2026-11-18T22:00:00+11:00",
+     "end": "2026-11-18T23:00:00+11:00",
+     "runway_mode": "16/27 IMCA",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "IMCA",
+     "arrival_rate": 23,
+     "notes": [
+      3,
+      4
+     ]
+    },
+    {
+     "start": "2026-11-18T23:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "runway_mode": "16/27 IMCA",
+     "runways": [
+      "16",
+      "27"
+     ],
+     "mode_code": "IMCA",
+     "arrival_rate": 23,
+     "notes": [
+      3,
+      4
+     ]
+    }
+   ],
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ymml_atis_atfm_runway_mode": {
+  "entity_id": "sensor.ymml_atis_atfm_runway_mode",
+  "state": "16 VMC",
+  "attributes": {
+   "runways": [
+    "16"
+   ],
+   "mode_code": "VMC",
+   "next_change": "2026-11-18T16:00:00+11:00",
+   "next_runway_mode": "16/27 VMCA",
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ymml_atis_atfm_arrival_rate": {
+  "entity_id": "sensor.ymml_atis_atfm_arrival_rate",
+  "state": "24",
+  "attributes": {
+   "unit_of_measurement": "arrivals/h",
+   "next_change": "2026-11-18T16:00:00+11:00",
+   "next_arrival_rate": 27,
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ymml_atis_atfm_ground_delay_program": {
+  "entity_id": "sensor.ymml_atis_atfm_ground_delay_program",
+  "state": "None",
+  "attributes": {
+   "programs": [],
+   "total_movements": 643,
+   "affected_flights": null,
+   "total_ground_delay_minutes": 0,
+   "average_ground_delay_minutes": 0.0,
+   "gdp_notes": "RWY 09/27 closed as per NOTAM. Nil other significant operational issues currently identified.",
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ymml_atis_atfm_notes": {
+  "entity_id": "sensor.ymml_atis_atfm_notes",
+  "state": "RWY 09/27 closed due WIP 2300-0500Z (NOTAM C2383/26). Likely CAVOK from midday, before cloud 1000-2000ft develops after 10Z. Light to moderate S winds, tending SSW from late afternoon, then easing and turning further towards WSW during the evening. RWY 1\u2026",
+  "attributes": {
+   "full_text": "RWY 09/27 closed due WIP 2300-0500Z (NOTAM C2383/26). Likely CAVOK from midday, before cloud 1000-2000ft develops after 10Z. Light to moderate S winds, tending SSW from late afternoon, then easing and turning further towards WSW during the evening. RWY 16/27 is planned immediately following the closure of RWY 09/27, however there is a chance of slight (< 5 knots) tailwind at times until 08Z.",
+   "metcdm_notes": [
+    {
+     "number": 1,
+     "start": "2026-11-18T06:00:00+11:00",
+     "end": "2026-11-18T12:00:00+11:00",
+     "text": "A ridge to extending from west of Tasmania up through offshore NSW will direct a light S flow over Melbourne on Wednesday. Areas of low cloud 1200-2000ft in the morning, lowering to cloud-on-ground about the southern side of the ranges. Fog patches may form in areas free of cloud, which is more likely in SE parts of the TMA but also presents a slight risk at the Airport in the event that low cloud does not eventuate. Light SE winds early, tending closer to S from late morning. RWY 16/27 configuration may be possible before the planned closure of RWY 09/27 at 23Z should winds tend closer to S than forecast."
+    },
+    {
+     "number": 2,
+     "start": "2026-11-18T10:00:00+11:00",
+     "end": "2026-11-18T16:00:00+11:00",
+     "text": "RWY 09/27 closed due WIP 2300-0500Z (NOTAM C2383/26)."
+    },
+    {
+     "number": 3,
+     "start": "2026-11-18T12:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "text": "Likely CAVOK from midday, before cloud 1000-2000ft develops after 10Z. Light to moderate S winds, tending SSW from late afternoon, then easing and turning further towards WSW during the evening. RWY 16/27 is planned immediately following the closure of RWY 09/27, however there is a chance of slight (< 5 knots) tailwind at times until 08Z."
+    },
+    {
+     "number": 4,
+     "start": "2026-11-18T22:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "text": "RWY 09/27 closed due WIP after 1100Z (NOTAM C2388/26)."
+    }
+   ],
+   "dlm_notes": [],
+   "sm_notes": [],
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ybbn_atis_atfm_plan": {
+  "entity_id": "sensor.ybbn_atis_atfm_plan",
+  "state": "2026-11-18",
+  "attributes": {
+   "version": 1,
+   "change_summary": "[07:34pm] Version 1: Initial.",
+   "forecast": [
+    {
+     "start": "2026-11-18T07:00:00+11:00",
+     "end": "2026-11-18T08:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 32,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T08:00:00+11:00",
+     "end": "2026-11-18T09:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 32,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T09:00:00+11:00",
+     "end": "2026-11-18T10:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T10:00:00+11:00",
+     "end": "2026-11-18T11:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T11:00:00+11:00",
+     "end": "2026-11-18T12:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T12:00:00+11:00",
+     "end": "2026-11-18T13:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 30,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T13:00:00+11:00",
+     "end": "2026-11-18T14:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 34,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T14:00:00+11:00",
+     "end": "2026-11-18T15:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T15:00:00+11:00",
+     "end": "2026-11-18T16:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T16:00:00+11:00",
+     "end": "2026-11-18T17:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T17:00:00+11:00",
+     "end": "2026-11-18T18:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T18:00:00+11:00",
+     "end": "2026-11-18T19:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T19:00:00+11:00",
+     "end": "2026-11-18T20:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T20:00:00+11:00",
+     "end": "2026-11-18T21:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T21:00:00+11:00",
+     "end": "2026-11-18T22:00:00+11:00",
+     "runway_mode": "01 DEP VMC",
+     "runways": [
+      "01"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 28,
+     "notes": [
+      1
+     ]
+    },
+    {
+     "start": "2026-11-18T22:00:00+11:00",
+     "end": "2026-11-18T23:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 31,
+     "notes": [
+      1,
+      2
+     ]
+    },
+    {
+     "start": "2026-11-18T23:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "runway_mode": "19 DEP VMC",
+     "runways": [
+      "19"
+     ],
+     "mode_code": "DEP VMC",
+     "arrival_rate": 20,
+     "notes": [
+      1,
+      2
+     ]
+    }
+   ],
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ybbn_atis_atfm_runway_mode": {
+  "entity_id": "sensor.ybbn_atis_atfm_runway_mode",
+  "state": "01 DEP VMC",
+  "attributes": {
+   "runways": [
+    "01"
+   ],
+   "mode_code": "DEP VMC",
+   "next_change": "2026-11-18T22:00:00+11:00",
+   "next_runway_mode": "19 DEP VMC",
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ybbn_atis_atfm_arrival_rate": {
+  "entity_id": "sensor.ybbn_atis_atfm_arrival_rate",
+  "state": "28",
+  "attributes": {
+   "unit_of_measurement": "arrivals/h",
+   "next_change": "2026-11-18T22:00:00+11:00",
+   "next_arrival_rate": 31,
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ybbn_atis_atfm_ground_delay_program": {
+  "entity_id": "sensor.ybbn_atis_atfm_ground_delay_program",
+  "state": "None",
+  "attributes": {
+   "programs": [],
+   "total_movements": 606,
+   "affected_flights": null,
+   "total_ground_delay_minutes": 0,
+   "average_ground_delay_minutes": 0.0,
+   "gdp_notes": "Nil significant operational issues currently identified.",
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
+ },
+ "sensor.ybbn_atis_atfm_notes": {
+  "entity_id": "sensor.ybbn_atis_atfm_notes",
+  "state": "A weak ridge building up the east coast of Australia will direct a moderate E to SE flow and bring settled conditions over Brisbane on Wednesday. A chance of a few light showers about the coast from mid-morning, contracting inland in the early afternoon.\u2026",
+  "attributes": {
+   "full_text": "A weak ridge building up the east coast of Australia will direct a moderate E to SE flow and bring settled conditions over Brisbane on Wednesday. A chance of a few light showers about the coast from mid-morning, contracting inland in the early afternoon. Cloud mostly 2500-4000ft, becoming patchy and lifting 3500-4500ft in the afternoon, then possibly lowering 2500-3500ft in the evening. Surface winds are expected to decouple from the 10-20 knot ESE winds aloft in the early morning, with a light S to SW likely. Winds becoming moderate E to NE from late morning, with a change to RWY 01 expected between 23-02Z. Winds gradually tending back to ESE in the evening; there is a chance that a change back to RWY 19 may not being required if wind direction maintains E of 110\u00b0. A -2 X-factor has been applied in the early morning due to risk of cloud below 2500ft, transitioning to the period of a slight risk of showers 22-01Z.",
+   "metcdm_notes": [
+    {
+     "number": 1,
+     "start": "2026-11-18T07:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "text": "A weak ridge building up the east coast of Australia will direct a moderate E to SE flow and bring settled conditions over Brisbane on Wednesday. A chance of a few light showers about the coast from mid-morning, contracting inland in the early afternoon. Cloud mostly 2500-4000ft, becoming patchy and lifting 3500-4500ft in the afternoon, then possibly lowering 2500-3500ft in the evening. Surface winds are expected to decouple from the 10-20 knot ESE winds aloft in the early morning, with a light S to SW likely. Winds becoming moderate E to NE from late morning, with a change to RWY 01 expected between 23-02Z. Winds gradually tending back to ESE in the evening; there is a chance that a change back to RWY 19 may not being required if wind direction maintains E of 110\u00b0. A -2 X-factor has been applied in the early morning due to risk of cloud below 2500ft, transitioning to the period of a slight risk of showers 22-01Z."
+    },
+    {
+     "number": 2,
+     "start": "2026-11-18T22:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "text": "SODPROPS expected to be favoured after 11Z."
+    }
+   ],
+   "dlm_notes": [],
+   "sm_notes": [
+    {
+     "number": 1,
+     "start": "2026-11-18T09:00:00+11:00",
+     "end": "2026-11-18T13:00:00+11:00",
+     "text": "RWY19L ILS off 2200--0600. Only predicted RWY19 operations plus transition buffer included in reduced rate."
+    },
+    {
+     "number": 2,
+     "start": "2026-11-18T14:00:00+11:00",
+     "end": "2026-11-18T23:00:00+11:00",
+     "text": "Short 1300-2130 shift"
+    },
+    {
+     "number": 3,
+     "start": "2026-11-18T23:00:00+11:00",
+     "end": "2026-11-19T00:00:00+11:00",
+     "text": "NAP"
+    }
+   ],
+   "attribution": "ATFM Daily Plan provided by Airservices Australia"
+  },
+  "last_changed": "2026-11-18T14:30:00+11:00",
+  "last_updated": "2026-11-18T14:30:00+11:00"
  }
 }

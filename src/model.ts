@@ -329,3 +329,70 @@ export function arrivalUpRotation(runways: RunwayLayout[], arrivals: string[]): 
   }
   return 0;
 }
+
+// ---------------------------------------------------------------------------
+// ATFM Daily Plan
+// ---------------------------------------------------------------------------
+
+/** One hour of the ATFM Daily Plan. Times are milliseconds since the epoch. */
+export interface PlanHour {
+  start: number;
+  end: number;
+  runwayMode: string | null;
+  arrivalRate: number | null;
+}
+
+/** A run of consecutive hours with the same runway mode. */
+export interface ModeSegment {
+  runwayMode: string | null;
+  /** Index of the first hour, and one past the last. */
+  from: number;
+  to: number;
+}
+
+/**
+ * Read the `forecast` attribute of `sensor.<icao>_atis_atfm_plan`. Entries
+ * without valid times are dropped, and the rest are sorted by start time.
+ */
+export function planHours(value: unknown): PlanHour[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item): PlanHour | null => {
+      if (!item || typeof item !== "object") return null;
+      const hour = item as Record<string, unknown>;
+      const start = Date.parse(String(hour.start));
+      const end = Date.parse(String(hour.end));
+      if (!Number.isFinite(start) || !Number.isFinite(end) || end <= start) return null;
+      const mode = typeof hour.runway_mode === "string" && hour.runway_mode.trim() ? hour.runway_mode.trim() : null;
+      const rate = typeof hour.arrival_rate === "number" && Number.isFinite(hour.arrival_rate) ? hour.arrival_rate : null;
+      return { start, end, runwayMode: mode, arrivalRate: rate };
+    })
+    .filter((hour): hour is PlanHour => hour !== null)
+    .sort((a, b) => a.start - b.start);
+}
+
+/** Index of the hour covering `now`, or -1 outside the plan. */
+export function currentHourIndex(hours: PlanHour[], now: number): number {
+  return hours.findIndex((hour) => hour.start <= now && now < hour.end);
+}
+
+/** Group consecutive hours with the same runway mode. */
+export function modeSegments(hours: PlanHour[]): ModeSegment[] {
+  const segments: ModeSegment[] = [];
+  hours.forEach((hour, index) => {
+    const last = segments[segments.length - 1];
+    const contiguous = index > 0 && hours[index - 1].end === hour.start;
+    if (last && contiguous && last.runwayMode === hour.runwayMode) last.to = index + 1;
+    else segments.push({ runwayMode: hour.runwayMode, from: index, to: index + 1 });
+  });
+  return segments;
+}
+
+/**
+ * The first later hour where `key` differs from the hour covering `now`.
+ * Before the plan starts, this is the plan's first hour.
+ */
+export function nextChange(hours: PlanHour[], now: number, key: "runwayMode" | "arrivalRate"): PlanHour | null {
+  const current = hours[currentHourIndex(hours, now)];
+  return hours.find((hour) => hour.start > now && (!current || hour[key] !== current[key])) ?? null;
+}

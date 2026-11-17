@@ -9,7 +9,8 @@
       the Australian ATIS integration's test fixtures. Serve the repository root
       (e.g. `npx serve .` or `python3 -m http.server`) after `npm run build`,
       then open /demo/. Add ?theme=dark for dark colours, ?static to stop
-      animations.
+      animations. The clock is pinned to the ATFM Daily Plan fixture's day
+      (?now=<ISO time> to change it, ?now=real for the real time).
     -->
     <style>
       :root {
@@ -51,6 +52,8 @@
     <script type="module">
       const params = new URLSearchParams(location.search);
       if (params.get("theme") === "dark") document.documentElement.classList.add("dark");
+      const now = params.get("now") ?? "2026-11-18T14:30:00+11:00";
+      if (now !== "real" && Number.isFinite(Date.parse(now))) Date.now = () => Date.parse(now);
       // A stand-in for Home Assistant's <ha-card>, styled from the theme variables.
       class DemoCard extends HTMLElement {
         constructor() {
@@ -62,12 +65,12 @@
       if (!customElements.get("ha-card")) customElements.define("ha-card", DemoCard);
       await import("../dist/aussie-atis-card.js");
       const states = await (await fetch("./states.json")).json();
-      const hass = { states, locale: { language: "en" } };
+      const hass = { states, locale: { language: "en", time_zone: "server" }, config: { time_zone: "Australia/Sydney" } };
       const cards = [
-        { airport: "yssy" },
-        { airport: "ymml" },
-        { airport: "ybbn", orientation: "arrival" },
-        { airport: "ypad" },
+        { airport: "yssy", show_atfm: true },
+        { airport: "ymml", show_atfm: true },
+        { airport: "ybbn", orientation: "arrival", show_atfm: true },
+        { airport: "ypad", show_atfm: true },
         { airport: "ypdn" },
         { airport: "yamb" },
         { airport: "ymen", show_info: false },

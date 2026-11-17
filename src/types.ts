@@ -10,8 +10,10 @@ export interface HassEntity {
 
 export interface HomeAssistant {
   states: Record<string, HassEntity>;
-  locale?: { language: string };
+  /** `time_zone` is "server" to show times in Home Assistant's time zone, or "local" for the browser's. */
+  locale?: { language: string; time_zone?: string };
   language?: string;
+  config?: { time_zone?: string };
 }
 
 export interface AussieAtisCardConfig {
@@ -24,6 +26,8 @@ export interface AussieAtisCardConfig {
   show_planes?: boolean;
   show_wind?: boolean;
   show_info?: boolean;
+  /** Show the ATFM Daily Plan (YSSY, YMML, YBBN and YPPH, when it's turned on in the integration). */
+  show_atfm?: boolean;
 }
 
 export interface LovelaceCardEditor extends HTMLElement {

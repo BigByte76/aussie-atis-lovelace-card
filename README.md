@@ -12,6 +12,7 @@ A Home Assistant dashboard card that draws an Australian airport's runways and a
 - **Runways used for both** alternate between green and blue.
 - **Wind** drifts across the map, and a wind arrow shows the direction and speed, including gusts.
 - **ATIS details** below the map: information letter, issue time, wind components, QNH, approach, weather and more. Fields that changed in the latest broadcast are marked with an orange dot, and the runways pulse when they've changed.
+- **ATFM Daily Plan** (optional) for Sydney, Melbourne, Brisbane and Perth: the planned runway mode and arrival rate for each hour, with the current hour marked, the next planned changes, any ground delay program, and the plan's weather notes.
 - **Two orientations:** north up, or rotated so the main arrival runway points up.
 - **Light and dark themes** use your Home Assistant theme colours.
 - **Motion is easy on your device and your eyes.** Animations pause when the card is off-screen or the tab is hidden, and stop completely if your device is set to reduce motion.
@@ -63,6 +64,7 @@ airport: ymml
 | `show_planes` | `true` | Show the aircraft flying the approaches and departures. The chevrons are always shown. |
 | `show_wind` | `true` | Show the wind particles and wind arrow. |
 | `show_info` | `true` | Show the ATIS details below the map. |
+| `show_atfm` | `false` | Show the ATFM Daily Plan below the map. Only for YSSY, YMML, YBBN and YPPH, and needs **Include ATFM Daily Plan** turned on in the integration (version 2.2 or newer). In the editor, tick **ATFM Daily Plan**. |
 
 ### Colours
 
@@ -86,6 +88,7 @@ If the ATIS names a runway that isn't on the map, the card lists it under the ma
 
 - **"No data for …":** the card couldn't find `sensor.<icao>_atis`. Check that the airport is selected in the Australian ATIS integration, and that `airport` is its ICAO code.
 - **The runways are grey and say "No ATIS":** the airport isn't broadcasting an ATIS right now, usually because the tower is closed.
+- **"No ATFM Daily Plan for …":** the plan only covers YSSY, YMML, YBBN and YPPH. For those, open the Australian ATIS integration, choose **Configure** and turn on **Include ATFM Daily Plan**.
 - **Nothing moves:** your device may be set to reduce motion. The card then shows static arrows and aircraft instead.
 
 <!-- ha-marketplace:exclude-start -->
@@ -99,7 +102,7 @@ npm run build     # dist/aussie-atis-card.js (commit it: HACS reads it from the 
 npm run layouts   # rebuild the bundled layouts from OurAirports
 ```
 
-To see the card without Home Assistant, build it, serve the repository root (for example `python3 -m http.server`), and open `/demo/`. Add `?theme=dark` for dark colours. The demo uses `demo/states.json`, which is built from the integration's test fixtures.
+To see the card without Home Assistant, build it, serve the repository root (for example `python3 -m http.server`), and open `/demo/`. Add `?theme=dark` for dark colours. The demo's clock is pinned to the day of the ATFM Daily Plan fixture; add `?now=real` for the real time. The demo uses `demo/states.json`, which is built from the integration's test fixtures.
 
 ### Releasing
 

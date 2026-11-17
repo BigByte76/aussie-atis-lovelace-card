@@ -31,6 +31,7 @@ npm run layouts     # rebuild src/data/layouts.json from OurAirports
 - Without the list attributes, the card splits the `_arrival_runways` / `_departure_runways` sensor states on commas.
 - Wind sensors may be converted by Home Assistant to the user's unit (often km/h), so always convert with `toKnots` using `unit_of_measurement`.
 - Long text sensors have the full value in a `full_text` attribute.
+- ATFM Daily Plan (integration 2.2+, YSSY/YMML/YBBN/YPPH only, opt-in in the integration), shown when `show_atfm` is set: `sensor.<icao>_atis_atfm_plan` (state is the plan date; `forecast` attribute with hourly `start`, `end`, `runway_mode`, `arrival_rate`; `version`), `_atfm_ground_delay_program` (state `None` when there's none; `programs`, `affected_flights`, `average_ground_delay_minutes`) and `_atfm_notes` (`full_text`). The card works out the current hour and next changes from `forecast` and the clock, and re-renders on the hour.
 
 ## Testing
 

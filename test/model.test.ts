@@ -2,11 +2,15 @@ import { describe, expect, it } from "vitest";
 import {
   arrivalUpRotation,
   bundledLayout,
+  currentHourIndex,
   endHeading,
   endUsage,
   findEnd,
   headingVector,
+  modeSegments,
+  nextChange,
   normaliseRunway,
+  planHours,
   project,
   resolveLayout,
   runwayList,
@@ -173,5 +177,54 @@ describe("projection", () => {
     expect(east.y).toBeCloseTo(0);
     const rotated = headingVector(90, 90); // map rotated so east is up
     expect(rotated.y).toBeCloseTo(-1);
+  });
+});
+
+describe("ATFM Daily Plan", () => {
+  // Shaped like the `forecast` attribute of sensor.yssy_atis_atfm_plan.
+  const hour = (h: number, mode: string | null, rate: number | null) => ({
+    start: `2026-11-18T${String(h).padStart(2, "0")}:00:00+11:00`,
+    end: `2026-11-18T${String(h + 1).padStart(2, "0")}:00:00+11:00`,
+    runway_mode: mode,
+    runways: mode ? [mode.split(" ")[0]] : [],
+    mode_code: mode?.split(" ")[1] ?? null,
+    arrival_rate: rate,
+    notes: [1],
+  });
+  const forecast = [hour(7, "34 DVAA", 44), hour(6, "34 DVAB", 34), hour(8, "34 DVAA", 44), hour(9, "16 VMC", null)];
+
+  it("reads and sorts the forecast, dropping bad entries", () => {
+    const hours = planHours([...forecast, { start: "nope", end: "2026-11-18T10:00:00+11:00" }, null, "x"]);
+    expect(hours.map((h) => h.runwayMode)).toEqual(["34 DVAB", "34 DVAA", "34 DVAA", "16 VMC"]);
+    expect(hours[0].start).toBe(Date.parse("2026-11-17T19:00:00Z"));
+    expect(hours[3].arrivalRate).toBeNull();
+    expect(planHours(undefined)).toEqual([]);
+  });
+
+  it("finds the current hour", () => {
+    const hours = planHours(forecast);
+    expect(currentHourIndex(hours, Date.parse("2026-11-18T07:30:00+11:00"))).toBe(1);
+    expect(currentHourIndex(hours, Date.parse("2026-11-18T08:00:00+11:00"))).toBe(2);
+    expect(currentHourIndex(hours, Date.parse("2026-11-18T05:59:00+11:00"))).toBe(-1);
+  });
+
+  it("finds the next planned change", () => {
+    const hours = planHours(forecast);
+    const at = (time: string) => Date.parse(`2026-11-18T${time}:00+11:00`);
+    expect(nextChange(hours, at("06:30"), "runwayMode")?.runwayMode).toBe("34 DVAA");
+    expect(nextChange(hours, at("07:30"), "runwayMode")?.start).toBe(at("09:00"));
+    expect(nextChange(hours, at("07:30"), "arrivalRate")?.arrivalRate).toBeNull();
+    expect(nextChange(hours, at("05:00"), "runwayMode")?.start).toBe(at("06:00"));
+    expect(nextChange(hours, at("09:30"), "runwayMode")).toBeNull();
+  });
+
+  it("groups hours by runway mode", () => {
+    expect(modeSegments(planHours(forecast))).toEqual([
+      { runwayMode: "34 DVAB", from: 0, to: 1 },
+      { runwayMode: "34 DVAA", from: 1, to: 3 },
+      { runwayMode: "16 VMC", from: 3, to: 4 },
+    ]);
+    // A gap in the plan starts a new segment.
+    expect(modeSegments(planHours([hour(6, "34 DVAA", 1), hour(8, "34 DVAA", 1)]))).toHaveLength(2);
   });
 });
