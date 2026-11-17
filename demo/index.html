@@ -10,7 +10,8 @@
       (e.g. `npx serve .` or `python3 -m http.server`) after `npm run build`,
       then open /demo/. Add ?theme=dark for dark colours, ?static to stop
       animations. The clock is pinned to the ATFM Daily Plan fixture's day
-      (?now=<ISO time> to change it, ?now=real for the real time).
+      (?now=<ISO time> to change it, ?now=real for the real time). ?only=yssy
+      shows just that card.
     -->
     <style>
       :root {
@@ -76,7 +77,9 @@
         { airport: "ymen", show_info: false },
         { airport: "zzzz" },
       ];
-      for (const config of cards) {
+      // ?only=yssy,ymml shows just those cards.
+      const only = params.get("only")?.split(",");
+      for (const config of cards.filter((c) => !only || only.includes(c.airport))) {
         const card = document.createElement("aussie-atis-card");
         card.setConfig({ type: "custom:aussie-atis-card", ...config });
         card.hass = hass;

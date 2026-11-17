@@ -2,7 +2,10 @@
 
 A Home Assistant dashboard card that draws an Australian airport's runways and animates the ones in use, using live ATIS from the [Australian ATIS integration](https://github.com/BigByte76/home-assistant-aussie-atis).
 
-![The card for Sydney, Melbourne and Brisbane](images/preview-light.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/preview-dark.png">
+  <img alt="The card for Sydney, Melbourne and Brisbane" src="images/preview-light.png">
+</picture>
 
 ## Features
 
@@ -76,6 +79,32 @@ You can change the colours from a theme or with [card-mod](https://github.com/th
 | `--aac-departure-color` | your theme's `--info-color` |
 | `--aac-runway-color` | `#3b3f45` |
 
+## 🗓️ ATFM Daily Plan
+
+For Sydney, Melbourne, Brisbane and Perth, the card can also show the Airservices Australia [ATFM Daily Plan](https://www.airservicesaustralia.com/noc/), the day's planned runway mode and arrival rate. Tick **ATFM Daily Plan** in the card editor, or add `show_atfm: true`:
+
+```yaml
+type: custom:aussie-atis-card
+airport: yssy
+show_atfm: true
+```
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/atfm-dark.png">
+  <img alt="The card for Sydney, Melbourne and Brisbane with the ATFM Daily Plan below the ATIS details" src="images/atfm-light.png">
+</picture>
+
+Below the ATIS details, the card shows:
+
+- **Now:** the planned runway mode and arrival rate for the current hour, followed by the next planned changes, e.g. `34 DVAB from 22:00`.
+- **Hour by hour:** a bar for each hour's planned arrival rate, with the runway mode underneath. The current hour is outlined, and past hours are faded. Hover over a bar for its details.
+- **Ground delay program:** when one is planned, its times, the number of flights affected and the average delay, highlighted in orange.
+- **Plan notes:** the plan's weather notes for the current hour. Select them to read them in full.
+
+Times are shown in the time zone you've chosen in your Home Assistant profile. The current hour moves on by itself, on the hour.
+
+You need the Australian ATIS integration **2.2 or newer**, with **Include ATFM Daily Plan** turned on: open the integration and choose **Configure**. The plan is published each evening for the next day and is a snapshot. For current flow management information, use Airservices' METCDM.
+
 ## 🗺 Where the runway layout comes from
 
 Australian ATIS **2.1 and newer** provides each airport's runway layout from aussieadsb.com, as the `runways` attribute of `sensor.<icao>_atis`.
@@ -102,7 +131,7 @@ npm run build     # dist/aussie-atis-card.js (commit it: HACS reads it from the 
 npm run layouts   # rebuild the bundled layouts from OurAirports
 ```
 
-To see the card without Home Assistant, build it, serve the repository root (for example `python3 -m http.server`), and open `/demo/`. Add `?theme=dark` for dark colours. The demo's clock is pinned to the day of the ATFM Daily Plan fixture; add `?now=real` for the real time. The demo uses `demo/states.json`, which is built from the integration's test fixtures.
+To see the card without Home Assistant, build it, serve the repository root (for example `python3 -m http.server`), and open `/demo/`. Add `?theme=dark` for dark colours. The demo's clock is pinned to the day of the ATFM Daily Plan fixture; add `?now=real` for the real time, and `?only=yssy,ymml` to show only those cards. The demo uses `demo/states.json`, which is built from the integration's test fixtures.
 
 ### Releasing
 
