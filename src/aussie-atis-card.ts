@@ -19,7 +19,7 @@ import type { AussieAtisCardConfig, HassEntity, HomeAssistant } from "./types";
 import { WindParticles, type WindState } from "./wind";
 import "./editor";
 
-const CARD_VERSION = "1.0.0";
+const CARD_VERSION = "1.1.0";
 const VIEW_WIDTH = 400;
 const HOUR = 3600000;
 
